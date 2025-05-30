@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
       rel="stylesheet"
       as="style"
@@ -17,20 +18,30 @@
     <meta name="author" content="Carlos">
     <meta property="og:title" content="El cifrado de las criptomonedas va a caer gracias a los chips cuánticos">
     <meta property="og:description" content="Expertos advierten que la computación cuántica podría vulnerar la seguridad de las criptomonedas y sistemas como AES-256. Descubre la amenaza y las soluciones.">
-    <meta property="og:image" content="ibm-q-system-one.jpg"> <meta property="og:url" content="URL_COMPLETA_DE_TU_SITIO_AQUI"> <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="imb-q-system-one.jpg"> <meta property="og:url" content="URL_COMPLETA_DE_TU_SITIO_AQUI"> <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="El cifrado de las criptomonedas va a caer gracias a los chips cuánticos">
     <meta name="twitter:description" content="La computación cuántica amenaza la seguridad de las criptomonedas. ¿Están preparados los sistemas actuales para los chips cuánticos?">
-    <meta name="twitter:image" content="ibm-q-system-one.jpg"> <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            
-          }
-        }
-      }
+    <meta name="twitter:image" content="ibm-q-system-one.jpg"> <script>
+        tailwind.config = {
+            theme: {
+                extend: {},
+            },
+            // Asegúrate de que las variantes responsivas estén habilitadas si por alguna razón no lo están
+            variants: {
+                extend: {},
+            },
+            // A veces, incluir una lista de archivos 'purge' en la configuración para el JIT del CDN ayuda
+            // Aunque esto es más para un entorno de desarrollo local, a veces puede influir en el CDN.
+            // Para un solo archivo, esto no es estrictamente necesario, pero no perjudica.
+            content: [
+                './index.html',
+                './privacy_policy.html',
+                './terms.html',
+                
+            ],
+        };
     </script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-48ZYHF56EW"></script>
 <script>
@@ -39,7 +50,6 @@
   gtag('js', new Date());
 
   gtag('config', 'G-48ZYHF56EW');
-</script>
 </head>
 <body>
     <div class="relative flex size-full min-h-screen flex-col bg-[#1a1a1a] dark group/design-root overflow-x-hidden" style='font-family: Newsreader, "Noto Sans", sans-serif;'>
@@ -51,11 +61,9 @@
                 <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path></svg>
               </div>
               <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Tech Insights</h2> </div>
-            <div class="hidden md:flex items-center gap-9"> <a class="text-white text-sm font-medium leading-normal hover:text-[#adadad]" href="#">Tecnología</a>
+            <div class="hidden md:flex items-center gap-9"> <a class="text-white text-sm font-medium leading-normal hover:text-[#adadad]" href="index.html">Inicio</a>
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#adadad]" href="#">Tecnología</a>
               <a class="text-white text-sm font-medium leading-normal hover:text-[#adadad]" href="#">Cripto</a>
-              <a class="text-white text-sm font-medium leading-normal hover:text-[#adadad]" href="#">Ciencia</a>
-              <a class="text-white text-sm font-medium leading-normal hover:text-[#adadad]" href="#">Futuro</a>
-              <a class="text-white text-sm font-medium leading-normal hover:text-[#adadad]" href="#">Gaming</a>
             </div>
           </div>
           <div class="flex flex-1 justify-end gap-4 sm:gap-8">
@@ -98,7 +106,7 @@
               <span class="text-[#adadad] text-base font-medium leading-normal">/</span>
               <span class="text-white text-base font-medium leading-normal">Criptografía Cuántica</span>
             </div>
-            <h1 class="text-white tracking-light text-[28px] sm:text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">El cifrado de las criptomonedas va a caer gracias a los chips cuánticos</h1> <p class="text-[#adadad] text-sm font-normal leading-normal pb-3 pt-1 px-4">Por Carlos · Publicado en 31/05/2025</p>
+            <h1 class="text-white tracking-light text-[28px] sm:text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">El cifrado de las criptomonedas va a caer gracias a los chips cuánticos</h1> <p class="text-[#adadad] text-sm font-normal leading-normal pb-3 pt-1 px-4">Por [Tu Nombre/Alias] · Publicado en 30/05/2025</p>
 
             <div class="@container">
               <div class="@[480px]:px-4 @[480px]:py-3">
@@ -134,13 +142,14 @@
           </div>
         </div>
       </div>
-            <footer class="bg-[#363636] text-white text-center py-6 px-4">
+      <footer class="bg-[#363636] text-white text-center py-6 px-4">
           <p class="text-sm">&copy; 2025 Tech Insights. Todos los derechos reservados.</p>
           <div class="flex justify-center gap-6 mt-4">
               <a href="privacy_policy.html" class="text-white hover:text-[#adadad] text-sm">Privacidad</a>
-              <a href="terms.html" class="text-white hover:text-[#adadad] text-sm">Términos</a> </div>
+              <a href="terms.html" class="text-white hover:text-[#adadad] text-sm">Términos</a>
+              <a href="#" class="text-white hover:text-[#adadad] text-sm">Contacto</a>
+          </div>
       </footer>
-
     </div>
 </body>
 </html>
